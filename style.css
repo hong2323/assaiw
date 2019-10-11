@@ -141,8 +141,8 @@
 .summary p {font-family: "Roboto", Helvetica, serif;}
 
 
-.weather {
-	#app {
+.weather 
+#app {
   display: grid;
   width: 800px;
   height: 400px;
@@ -291,8 +291,6 @@
   0% {top: -100%;}
   50% {top: 0;}
   100% {top: 100%;}
-}
-
 }
 
 .contact {
