@@ -1,3 +1,11 @@
+function navigation(){
+	$('.primary-nav').css('height', $('.logo').height());
+	$('.primary-nav li').css('margin-top', ($('.primary-nav').height()-$('.primary-nav li').height())/2 + 'px')
+
+	$(window).resize(function(){
+		setTimeout(navigation, 500);
+	});
+}
 
 const cities = [353412];
 const apikey = 'l54dxP71pwauzBCp3Gnr1l3V1wJGk622';
@@ -143,12 +151,4 @@ var app = new Vue({
     },
   },
 })
-function navigation(){
-	$('.primary-nav').css('height', $('.logo').height());
-	$('.primary-nav li').css('margin-top', ($('.primary-nav').height()-$('.primary-nav li').height())/2 + 'px')
-
-	$(window).resize(function(){
-		setTimeout(navigation, 500);
-	});
-}
 
